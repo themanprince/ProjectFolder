@@ -37,4 +37,4 @@ const theServer = new Server(async (req, res) => {
 	}
 });
 
-theServer.listen(8000, () => console.log("Idan is active"));
+theServer.listen(8000, () => console.log("The Server is Active\nThe Web Address is localhost:8000"));
