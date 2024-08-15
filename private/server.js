@@ -7,7 +7,7 @@ const theServer = new Server(async (req, res) => {
 	let requestedFilePath = (path.dirname(__filename) + "/.." + req.url).replace(/\%\2\0/g, " ");
 	
 	
-	console.log(req.method, "\"", requestedFilePath, "\"");
+	// console.log(req.method, "\"", requestedFilePath, "\"");
 	
 	const fileExists = new Promise(resolve => exists(requestedFilePath, resolve));
 	
